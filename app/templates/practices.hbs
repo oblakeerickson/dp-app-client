@@ -2,7 +2,9 @@
   <ul>
     {{#each}}
       <li class="practice">
-        <a href="#">{{title}}</a>
+        {{#link-to 'practices.show' this}}
+          {{title}}
+        {{/link-to}}
       </li>
     {{/each}}
   </ul>
